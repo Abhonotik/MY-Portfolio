@@ -80,7 +80,7 @@ h3 {
 }
 
 .home-right img {
-    position: absolute;
+    position: relative;
     width: 500%;
     left: 110px;
     top: -100px;
@@ -418,8 +418,6 @@ ul li a:hover {
 html {
   scroll-behavior: smooth;
 }
-
 #contact {
   scroll-margin-top: 100px; /* adjust based on header height */
 }
-
