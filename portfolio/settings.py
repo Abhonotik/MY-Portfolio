@@ -129,6 +129,12 @@ STATIC_URL = 'static/'
 # Add this in production:
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
+MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+    # ...
+]
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 # During development
 STATICFILES_DIRS = [BASE_DIR / 'static']
 # Default primary key field type
