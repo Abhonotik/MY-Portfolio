@@ -1,0 +1,219 @@
+{% load static%}
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portf </title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.jpeg">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>`
+    
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">About Me <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#Projects" class="t-white roboto">Projects <i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="#Contact" class="t-white roboto">Contact <i class="fa-solid fa-rocket"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+        
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppinss">Hi, I'm</h6>
+                <h1 class="t-white">Abhishek Yadav</h1>
+                <h3 class="poppinss">Computer Science Student</h3>
+                <a href="{% static 'images/ABHISHEK_YADAV_CV.pdf' %}"  target="_blank">
+                    <button class="btn poppins">Resume</button></a>
+                    
+                
+
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+               
+                <img src="{% static 'images/Abhishek1.png'%}" alt="">
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" >
+        <h1 class="t-center my-2 t-white f-2">About Me</h1>
+        <div class="about-container flex s-around ">
+            <div class=" about-left flex s-center items-center">
+                <!-- Here in src replade the given link with your secondary image link -->
+                <img src="{%static 'images/About.png'%}" alt="" style="width: 60%;">
+            </div>
+
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 poppins">Abhishek Yadav</h1>
+                    <p class="t-white poppins">"I'm a Computer Science student who writes code by day and attempts to
+                         decode the Indian stock market by night. Between debugging my Python scripts and predicting stock 
+                        trends, I've learned two things: algorithms don't always save your money, and meme stocks are surprisingly fun.
+                         I diversify like a pro—half my portfolio is tech, the other half is ‘let's see what happens.’
+                         If you need advice, just remember: it's like coding—sometimes, the error is *you*!"</p>
+                    <
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Skills</h1>
+        <div class="services-container flex s-around h-50">
+        <div class=" skills-left flex s-center items-center">
+            <img src="{%static 'images/Skills.png'%}" alt="">
+        </div>
+
+        <div class="skills-right flex items-center">
+            <div class="skillss-container">
+                <div class="java bar p-relative"><span class="bar-content left t-white"> Python</span><span
+                        class="bar-content right-skills t-white">80%</span></div>
+                <div class="html bar p-relative"><span class="bar-content left t-white">Java</span><span
+                        class="bar-content right-skills t-white">60%</span></div>
+                <div class="css bar p-relative"><span class="bar-content left t-white">Data Structure</span><span
+                        class="bar-content right-skills t-white">60%</span></div>
+                <div class="js bar p-relative"><span class="bar-content left t-white">Javascript</span><span
+                        class="bar-content right-skills t-white">40%</span></div>
+                <div class="mysql bar p-relative"><span class="bar-content left t-white">MySQL</span><span
+                        class="bar-content right-skills t-white">40%</span></div>        
+            </div>
+        </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Projects Section -->
+    <section id="Projects">
+        <h1 class=" t-center my-2 t-white f-2">Projects</h1>
+        <div class="projects-container flex s-center">
+            <div class="projects-item flex f-col s-center items-center">
+               
+                <h1 class="t-white poppins">Movie Recommender System</h1>
+                <p class="t-white poppins"> Technologies Used: Python, Machine Learning, HTML, CSS
+A content-based movie recommender system that analyzes genres, keywords, and cast to suggest similar titles.
+ It uses feature extraction and cosine similarity for personalized recommendations, with a simple HTML/CSS frontend for
+  user interaction.
+  <div class="buttons flex s-around">
+                    <a href="https://github.com/Abhonotik/movie-recommender-system/tree/master"
+                        target="_blanks" class="btn mx-1 m-top">GitHub</a>
+                    <a href="" target="_blanks" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+               
+                <h1 class="t-white poppins">My Portfolio</h1>
+                <p class="t-white poppins">This is My portfolio website which is created with HTML,CSS and Javascript which describe my skill and knowledge.My portfolio website showcases my work in a sleek and minimalist design, allowing the focus to be on the content itself. The layout is uncluttered, making it easy for visitors to navigate and explore my projects.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/Abhonotik/MY-Portfolio" target="_blanks"
+                        class="btn mx-1 m-top">GitHub</a>
+                    <a href="#" target="_blanks" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+
+          
+            <div class="projects-item flex f-col s-center items-center">
+               
+                <h1 class="t-white poppins">Hospital Management System</h1>
+                <p class="t-white poppins">The Hospital Management System is a Java-based desktop application designed to streamline hospital 
+                    operations such as patient registration, doctor assignment, appointment scheduling, billing, and ward management. This project was
+                     built as part of my academic learning during the
+                     second year of my BSc in Computer Science. It uses Core Java and Advan  <div class="buttons flex s-around">
+                    <a href="https://github.com/Abhonotik/Hospital_Management_System" target="_blanks"
+                        class="btn mx-1 m-top">GitHub</a>
+                    <a href="#" target="_blanks" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+           
+         </div>
+           </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="Contact" class="m-b-1">
+        <h1 class=" t-center my-2 t-white f-2">Contact Me</h1>
+        <div class="contact-container flex s-around items-centers">
+            <div class="form" id="contactForm">
+                <form method="post" > 
+                    {% csrf_token %}
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
+                    </div>
+
+                    <div class="email form-div">
+                        <input type="email" name="email" id="" class="poppins" placeholder="Enter Your Email"
+                            required>
+                    </div>
+
+                    <div class="phone form-div">
+                        <input type="phone" name="number" id="" class="poppins" placeholder="Enter Your Phone"
+                            required>
+                    </div>
+                    
+                    <div class="textarea form-div">
+                        <textarea name="content" id="textarea" cols="30" rows="10" class="poppins"
+                            placeholder="Enter Messages"></textarea>
+                    </div>
+                    <button type="submit" class="btn poppins" id="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="poppinss">Home</a></li>
+            <li><a href="#about" class="poppinss">About</a></li>
+            <li><a href="#skills" class="poppinss">Skills</a></li>
+            <li><a href="#projects" class="poppinss">Projects</a></li>
+            <li><a href="#portfolio" class="poppinss">Portfolio</a></li>
+        </ul>
+        <ul class="flex s-center w-80 font-awesome ">
+            <a href="
+https://www.linkedin.com/in/abhishek-yadav-41baa5308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </a>
+            <a href="https://github.com/Abhonotik" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+                <a href="https://www.instagram.com/abhonotik_14/" target="_blank">
+                    <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+            
+        </ul>
+        <p class="t-center my-2 poppins">&copy; All Rights Reserved - <span class="cpy-white poppins">Error By Night 
+                </span></p>
+
+    </footer>
+     
+</body> 
+</html>
