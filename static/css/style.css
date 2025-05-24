@@ -421,3 +421,83 @@ html {
 #contact {
   scroll-margin-top: 100px; /* adjust based on header height */
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  /* Navbar */
+  #navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #navbar ul li {
+    margin: 0.5rem 0;
+  }
+
+  /* Home Section - stack left and right vertically */
+  .home-left,
+  .home-right {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .home-left h6,
+  .home-left h1,
+  .home-left h3 {
+    font-size: 2rem; /* smaller fonts on mobile */
+    margin: 0.5rem 0;
+  }
+
+  .home-right img {
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+  }
+
+  /* About Section */
+  .about-left,
+  .about-right {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .about-left img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Skills Section */
+  .skills-left,
+  .skills-right {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  /* Projects Section */
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .projects-item {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  /* Contact form */
+  .form {
+    flex-direction: column;
+    width: 90%;
+    padding: 0 1rem;
+  }
+
+  .form-div input,
+  textarea {
+    width: 100%;
+  }
+
+  /* Adjust text sizes globally for smaller screens */
+  body, p, h1, h3, h6 {
+    font-size: 90%;
+  }
+}
